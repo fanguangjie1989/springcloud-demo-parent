@@ -6,4 +6,4 @@ spring:
     time-zone: GMT+8
 server:
   context-path: /
-  port: 8080
+  port: 8082

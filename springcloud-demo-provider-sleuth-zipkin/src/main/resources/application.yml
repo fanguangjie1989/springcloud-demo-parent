@@ -10,9 +10,9 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
   datasource:
-    url: jdbc:oracle:thin:@10.5.1.121:1521:hhuat
-    username: bphh
-    password: hhic1221
+    url: jdbc:oracle:thin:@10.5.1.13:1521:fnd
+    username: bp_dev
+    password: bp_dev
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: oracle.jdbc.driver.OracleDriver
 management:
@@ -28,7 +28,7 @@ app:
 
 server:
   context-path: /
-  port: 9010
+  port: 9092
 
 eureka:
   client:
