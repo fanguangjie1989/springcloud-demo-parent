@@ -8,6 +8,17 @@ server:
   context-path: /
   port: 8081
 
+feign:
+  hystrix:
+    enabled: true
+
+endpoints:
+  health:
+    sensitive: true
+management:
+  security:
+    enabled: false
+
 eureka:
   client:
     register-with-eureka: false
