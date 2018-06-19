@@ -1,0 +1,19 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@10.5.1.13:1521:fnd
+    username: bp_dev
+    password: bp_dev
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+  application:
+    name: springcloud-demo-config-server-jdbc
+  cloud:
+    config:
+      label: master
+      server:
+        jdbc:
+          sql: select config_key,config_value from pay_common_config where app_name=? and app_profile=? and app_lable=?
+  profiles:
+    active:
+    - jdbc

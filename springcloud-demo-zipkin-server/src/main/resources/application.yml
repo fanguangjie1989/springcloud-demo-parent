@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: springcloud-demo-zipkin-server
+server:
+  context-path: /
+  port: 9411
+  
