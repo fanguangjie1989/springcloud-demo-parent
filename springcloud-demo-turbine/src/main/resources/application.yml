@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: springcloud-demo-hystrix-turbine
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+server:
+  context-path: /
+  port: 8085
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+#turbine config
+turbine:
+  app-config: springcloud-demo-consumer-feign-hystrix,springcloud-demo-consumer-feign-hystrix-fallback
+  cluster-name-expression: "'default'"

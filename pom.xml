@@ -79,6 +79,8 @@
 		<module>springcloud-demo-consumer-feign</module>
 		<module>springcloud-demo-consumer-feign-hystrix</module>
 		<module>springcloud-demo-consumer-feign-hystrix-dashboard</module>
+		<module>springcloud-demo-turbine</module>
+		<module>springcloud-demo-consumer-feign-hystrix-fallback</module>
 		<module>springcloud-demo-consumer-feign-sleuth</module>
 		<module>springcloud-demo-consumer-feign-sleuth-zipkin</module>
 		<module>springcloud-demo-eureka</module>
