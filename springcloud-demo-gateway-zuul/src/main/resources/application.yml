@@ -3,6 +3,25 @@ server:
 spring:
   application:
     name: springcloud-demo-gateway-zuul
+
+# zuul config
+zuul:
+  prefix: /api  # prefixing service calls with a type of label
+  ignored-services: '*' # exclude all Eureka-based routes
+  routes:
+    springcloud-demo-provider: /provider/**
+    springcloud-demo-provider-sleuth:
+      path: /providersleuth/**    # manual mapping of routes using static URLs
+      url: http://localhost:9091  # be called directly, not th rough Eureka by Zuul
+
+management:
+  security:
+    enabled: false
+
+endpoints:
+  routes:
+    sensitive: false
+
 eureka:
   client:
     fetch-registry: true

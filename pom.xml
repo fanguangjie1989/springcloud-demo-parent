@@ -88,5 +88,7 @@
 		<module>springcloud-demo-provider-sleuth</module>
 		<module>springcloud-demo-provider-sleuth-zipkin</module>
 		<module>springcloud-demo-zipkin-server</module>
+		<!-- security  -->
+		<module>springcloud-demo-security-oauth2-jwt</module>
 	</modules>
 </project>
